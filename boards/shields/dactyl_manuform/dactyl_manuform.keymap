@@ -52,11 +52,11 @@
                 &kp LCTRL  &kp Z        &kp X        &kp C        &kp V       &kp B                                   &kp N      &kp M       &kp COMMA    &kp DOT      &kp SLASH            &kp BSLH
                                         &kp LBKT     &kp RBKT                                                                                &kp MINUS    &kp EQUAL
                                                                   &kp SPACE                                                      &kp BSPC
-                                                                              &lt RAISE TAB    &kp LG(LS(S))       &kp RG(R)  &lt LOWER ENTER
+                                                                              &kp LG(LS(S))   &lt LOWER TAB       &lt LOWER ENTER  &kp RG(R)
                                                                               &mo ADJUST   &kp ESC         &kp LS(LC(ENTER))  &mo ADJUST
             >;
         };
-
+	
         lower_layer {
             // Left Hand Keys:                    Right Hand Keys:
             // - - - - - -                         VOL+ - UP - PGUP -
