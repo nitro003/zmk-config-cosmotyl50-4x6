@@ -16,7 +16,7 @@
 &mt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <110>;
+    quick-tap-ms = <120>;
 };
 / {
     behaviors {
@@ -52,8 +52,8 @@
                 &kp LCTRL  &kp Z        &kp X        &kp C        &kp V       &kp B                                   &kp N      &kp M       &kp COMMA    &kp DOT      &kp SLASH            &kp BSLH
                                         &kp LBKT     &kp RBKT                                                                                &kp MINUS    &kp EQUAL
                                                                   &kp SPACE                                                      &kp BSPC
-                                                                              &lt_mod RAISE LG(LS(S))   &lt LOWER TAB       &lt LOWER ENTER  &mo RAISE
-                                                                              &mo ADJUST   &kp ESC         &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
+                                                                    &lt_mod RAISE LG(LS(S))   &lt LOWER TAB         &lt LOWER ENTER  &mo RAISE
+                                                                    &mo ADJUST                &kp ESC               &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
             >;
         };
 	
