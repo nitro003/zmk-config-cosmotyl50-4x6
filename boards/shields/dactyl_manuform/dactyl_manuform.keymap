@@ -12,6 +12,7 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
+#define NAVI    4
 
 
 
@@ -55,7 +56,7 @@
                                         &kp LBKT     &kp RBKT                                                                                &kp MINUS    &kp EQUAL
                                                                   &kp SPACE                                                      &kp BSPC
                                                                     &lt_mod RAISE LG(LS(S))   &lt LOWER TAB         &lt LOWER ENTER  &mo RAISE
-                                                                    &kp ESC                &mo ADJUST               &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
+                                                                    &kp ESC                &mo NAVI               &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
             >;
         };
 	
@@ -98,6 +99,26 @@
                                                                                 &trans       &trans            &trans     &trans
             >;
         };
+		
+		navi_layer {
+            // Left Hand Keys:                    Right Hand Keys:
+            // - ! @ # $ %                          ^ & * ( ) -
+            // - 1 2 3 4 5                          6 7 8 9 0 -
+            // - - - - - -                          - - - ' \ -
+            //     - -                                  - -
+            //           -                          -
+            //             - -                  - -
+            //             - -                  - -
+            bindings = <
+                &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK                		 &none   &none           &mmv MOVE_UP    &none            &none  &none
+                &trans &kp LSHFT &kp LCTRL &kp LGUI  &kp LALT &trans                		 &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+                &trans &trans &trans &trans &trans &trans                		 &none   &none           &none           &none            &none  &none
+                              &trans &trans                              		                         &kp GLOBE       &none
+                                            &trans                       		         &trans
+                                                   &trans &trans            &trans &trans
+                                                   &trans &trans            &trans &trans
+            >;
+        };
 
         adjust_layer {
             // Left Hand Keys:                    Right Hand Keys:
@@ -109,7 +130,7 @@
             //             - -    - -
             //             - -    - -
             bindings = <
-                &kp EXCL  &none        &none        &none        &none        &none                                      &none         &none           &mmv MOVE_UP    &none            &none  &none
+                &kp EXCL  &none        &none        &none        &none        &none                                   &none         &none           &mmv MOVE_UP    &none            &none  &none
                 &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                               &none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
                 &none  &out OUT_USB &out OUT_BLE &bt BT_CLR   &none        &bt BT_CLR_ALL                             &none         &none           &none           &none            &none  &none
                                     &mkp LCLK    &mkp RCLK                                                                                          &kp GLOBE       &none
