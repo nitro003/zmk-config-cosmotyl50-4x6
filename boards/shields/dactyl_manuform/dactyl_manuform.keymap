@@ -55,7 +55,7 @@
                                         &kp LBKT     &kp RBKT                                                                                &kp MINUS    &kp EQUAL
                                                                   &kp SPACE                                                      &kp BSPC
                                                                     &lt_mod RAISE LG(LS(S))   &lt LOWER TAB         &lt LOWER ENTER  &mo RAISE
-                                                                    &mo ADJUST                &kp ESC               &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
+                                                                    &kp ESC                &mo ADJUST               &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
             >;
         };
 	
