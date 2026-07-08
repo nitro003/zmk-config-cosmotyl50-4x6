@@ -131,7 +131,7 @@
             //             - -                  - -
             //             - -                  - -
             bindings = <
-                &kp EXCL  &none        &none          &mkp LCLK    &mkp RCLK   &mkp MCLK                         &kp ENTER     &none           &mmv MOVE_UP    &none            &none  &none
+                &kp EXCL  &none        &none          &mkp LCLK    &mkp RCLK   &mkp MCLK                         &kp HOME      &none           &mmv MOVE_UP    &none            &none  &none
                 &kp TAB   &mt LSHFT A  &mt LCTRL S    &mt LGUI D   &mt LALT F  &kp G                             &kp END       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
                 &none     &none        &msc SCRL_UP   &msc SCRL_DOWN        &none        &none                   &none         &none           &none           &none            &none  &none
                                        &msc SCRL_LEFT &msc SCRL_RIGHT                                                                                          &kp GLOBE       &none
