@@ -73,7 +73,7 @@
                 &trans       &trans       &trans       &kp UP       &trans       &trans                                     &kp LS(LCTRL) &trans        &kp RG(UP)       &trans         &kp PG_UP     &trans
                 &trans       &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &trans                                     &kp LSHFT     &kp RG(LEFT)  &kp RG(DOWN)     &kp RG(RIGHT)  &kp PG_DN     &trans
                 &kp CAPS     &kp PSCRN    &kp C_PREV   &kp C_PP     &kp C_NEXT   &trans                                     &kp C_MUTE    &kp HOME      &kp END          &kp INS        &kp DEL       &trans
-                                          &trans       &trans                                                                                              &trans       &trans
+                                          &kp LC(LS(PG_UP))      &kp LC(LS(PG_DN))                                                                                              &trans       &trans
                                                                     &trans                                                                &trans
                                                                                  &trans       &trans           &trans       &trans
                                                                                  &trans       &trans           &trans       &trans
