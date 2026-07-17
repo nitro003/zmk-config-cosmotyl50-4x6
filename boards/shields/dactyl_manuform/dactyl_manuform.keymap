@@ -8,13 +8,19 @@
 // #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 
+
+//LAYERS
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
 #define NAVI    4
 
-
+//OTHER DEFINITIONS
+/* Hyper modifier macro (Ctrl+Alt+Shift) */
+#define HYP(key) LS(LC(LA(key)))
+/* Windows+Alt modifier macro */
+#define WALT(key) LG(LA(key))
 
 &mt {
     flavor = "balanced";
@@ -131,10 +137,10 @@
             //             - -                  - -
             //             - -                  - -
             bindings = <
-                &kp EXCL  &none        &none          &mkp LCLK    &mkp RCLK   &mkp MCLK                         &kp HOME      &none           &mmv MOVE_UP    &none            &none  &none
-                &kp TAB   &mt LSHFT A  &mt LCTRL S    &mt LGUI D   &mt LALT F  &kp G                             &kp END       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
-                &none     &none        &msc SCRL_UP   &msc SCRL_DOWN        &none        &none                   &none         &none           &none           &none            &none  &none
-                                       &msc SCRL_LEFT &msc SCRL_RIGHT                                                                                          &kp GLOBE       &none
+                &kp EXCL  &none        &none             &mkp LCLK         &mkp RCLK        &mkp MCLK                         &kp HOME      &none           &mmv MOVE_UP    &none            &none  &none
+                &kp TAB   &mt LSHFT A  &mt LCTRL HYP(S)  &mt LGUI HYP(D)   &mt LALT HYP(F)  &kp HYP(G)                        &kp END       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+                &none     &none        &msc SCRL_UP      &msc SCRL_DOWN    &none            &none                             &none         &none           &none           &none            &none  &none
+                                       &msc SCRL_LEFT    &msc SCRL_RIGHT                                                                                          &kp GLOBE       &none
                                                               &none                                                                 &none
                                                                            &none        &none           &none         &none
                                                                            &none        &none           &none         &none
