@@ -62,7 +62,7 @@
                                         &kp LBKT     &kp RBKT                                                                                &kp MINUS    &kp EQUAL
                                                                   &kp SPACE                                                      &kp BSPC
                                                                     &lt_mod RAISE LG(LS(S))   &lt LOWER TAB         &lt LOWER ENTER  &mo RAISE
-                                                                    &kp ENTER                &mo NAVI               &kp LS(LC(ENTER))  &lt_mod ADJUST RG(R)
+                                                                    &kp ENTER                &mo NAVI               &lt_mod	NAVI LS(LC(ENTER))  &lt_mod ADJUST RG(R)
             >;
         };
 	
